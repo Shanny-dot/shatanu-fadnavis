@@ -3,9 +3,9 @@ import React, { useEffect, useRef, useState, useCallback } from "react"
 type Direction = "left" | "center" | "right"
 
 const images: Record<Direction, string> = {
-  right:  "/avatar-right.jpg?v=2",
-  center: "/avatar-center.jpg?v=2",
-  left:   "/avatar-left.jpg?v=2",
+  right:  "/avatar-right.png?v=3",
+  center: "/avatar-center.png?v=3",
+  left:   "/avatar-left.png?v=3",
 }
 
 const AnimatedAvatar: React.FC = () => {
@@ -66,7 +66,7 @@ const AnimatedAvatar: React.FC = () => {
           key={d}
           src={images[d]}
           alt={`Portrait ${d}`}
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover object-top"
           style={{
             opacity: dir === d && loaded ? 1 : 0,
             transition: "opacity 260ms ease-in-out",

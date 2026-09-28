@@ -33,10 +33,10 @@ export const About: React.FC = () => {
               {/* Ambient glow ring */}
               <div className="absolute -inset-3 bg-gradient-to-br from-neutral-200 via-neutral-300/60 to-neutral-200 rounded-[2rem] blur-2xl opacity-60 pointer-events-none" />
 
-              {/* Portrait — square, crisp edges */}
+              {/* Portrait — full vertical rectangle, showing entire illustration */}
               <div
-                className="relative overflow-hidden shadow-xl"
-                style={{ aspectRatio: "1/1" }}
+                className="relative overflow-hidden shadow-xl bg-white border border-neutral-200/80 rounded-2xl"
+                style={{ aspectRatio: "2/3" }}
               >
                 <AnimatedAvatar />
               </div>

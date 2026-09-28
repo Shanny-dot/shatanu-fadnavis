@@ -66,7 +66,7 @@ const AnimatedAvatar: React.FC = () => {
           key={d}
           src={images[d]}
           alt={`Portrait ${d}`}
-          className="absolute inset-0 w-full h-full object-cover object-top"
+          className="absolute inset-0 w-full h-full object-contain object-center"
           style={{
             opacity: dir === d && loaded ? 1 : 0,
             transition: "opacity 260ms ease-in-out",

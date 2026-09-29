@@ -5,6 +5,7 @@ import About from "@/components/About"
 import Skills from "@/components/Skills"
 import Projects from "@/components/Projects"
 import Experience from "@/components/Experience"
+import Lab from "@/components/Lab"
 import Contact from "@/components/Contact"
 import Footer from "@/components/Footer"
 
@@ -18,6 +19,7 @@ export function App() {
         <Skills />
         <Projects />
         <Experience />
+        <Lab />
         <Contact />
       </main>
       <Footer />

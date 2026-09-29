@@ -14,11 +14,12 @@ export const Navbar: React.FC = () => {
     { label: "Skills", href: "#skills" },
     { label: "Projects", href: "#projects" },
     { label: "Journey", href: "#journey" },
+    { label: "Lab", href: "#lab" },
     { label: "Contact", href: "#contact" },
   ]
 
   useEffect(() => {
-    const sectionIds = ["home", "about", "skills", "projects", "journey", "contact"]
+    const sectionIds = ["home", "about", "skills", "projects", "journey", "lab", "contact"]
 
     const handleScroll = () => {
       setScrolled(window.scrollY > 20)
